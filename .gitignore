@@ -1,0 +1,19 @@
+# ModelSim
+work/
+transcript
+*.wlf
+
+# Simulation files
+*.log
+*.bak
+*.jou
+
+# Quartus / FPGA generated files
+db/
+incremental_db/
+*.qws
+*.qdb
+
+# OS files
+.DS_Store
+Thumbs.db
