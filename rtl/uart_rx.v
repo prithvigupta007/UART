@@ -75,14 +75,12 @@ module uart_rx
 	        begin
     	        sample_count <= sample_count + 1'b1;
 
-    	        // Validate the start bit in the middle
     	        if(sample_count == 4'd7)
     	        begin
         	        if(rx_sync2 != 1'b0)
             	        state <= IDLE;
     	        end
 
-    	        // Wait until the end of the start bit
     	        if(sample_count == 4'd15)
     	        begin
         	        sample_count <= 4'd0;
